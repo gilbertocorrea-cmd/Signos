@@ -1,0 +1,117 @@
+:root {
+    color-scheme: dark;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #edf9fa;
+    background: #062c36;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse at top left, #238b9855, transparent 55%),
+        linear-gradient(135deg, #041b25 0%, #0b4653 50%, #126775 100%);
+}
+
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 24px;
+}
+
+h1 {
+    margin: 0 0 48px;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: -0.04em;
+    text-shadow: 0 4px 24px #00000030;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #4bb7c6, #b4f3ed);
+}
+
+.signos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.signo-card {
+    padding: 28px 20px;
+    text-align: center;
+    border: 1px solid #a4e7ec30;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #185768e6, #082f3de6);
+    box-shadow: 0 12px 30px #00151e40;
+    transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.signo-card h2 {
+    margin: 0 0 22px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.signo-card img {
+    display: block;
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 12px #00151e40);
+}
+
+.signo-card p {
+    display: inline-block;
+    margin: 24px 0 0;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #041e2a66;
+    color: #bfe6eb;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+}
+
+@media (hover: hover) {
+    .signo-card:hover {
+        transform: translateY(-6px);
+        border-color: #81d6df80;
+        box-shadow: 0 18px 36px #00151e66;
+    }
+}
+
+@media (max-width: 480px) {
+    .App {
+        padding: 40px 16px;
+    }
+
+    h1 {
+        margin-bottom: 32px;
+    }
+
+    .signos-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .signo-card {
+        transition: none;
+    }
+
+    .signo-card:hover {
+        transform: none;
+    }
+}
