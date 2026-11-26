@@ -1,4 +1,8 @@
 <div align="center">
+  <img src="./docs/project-banner.svg" width="100%" alt="Banner SIGNOS">
+</div>
+
+<div align="center">
 
 # S I G N O S　//　Z O D I A C　U I
 
