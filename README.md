@@ -2,7 +2,7 @@
   <img src="./docs/project-banner.png" width="100%" alt="Banner do projeto">
 </div>
 
-<div align="center">
+<div align="center"> 
 
 # S I G N O S　//　Z O D I A C　U I
 
